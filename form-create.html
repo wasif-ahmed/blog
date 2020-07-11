@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form</title>
+    <meta name="description" content="Form creation page" />
+    <meta name="author" content="Wasif Ahmed" />
+    <link rel="icon" href="./blog.ico" />
+    <link rel="stylesheet" href="form-styles.css" />
+  </head>
+
+  <body>
+    <h2>Blog Form</h2>
+    <div class="wrapper">
+      <form id="blogForm" onsubmit="onClick()">
+        <div class="input">
+          <label for="author-name"> Author Name:</label>
+          <input
+            type="text"
+            id="author-name"
+            name="author-name"
+            required="true"
+          />
+        </div>
+
+        <div class="input">
+          <label for="publish-date"> Publish Date::</label>
+          <input
+            type="date"
+            id="publish-date"
+            name="publish-date"
+            required="true"
+          />
+        </div>
+
+        <div class="input">
+          <label for="blog-content">Blog Content</label>
+          <textarea
+            id="blog-content"
+            name="blog-content"
+            rows="4"
+            cols="50"
+            required="true"
+          ></textarea>
+        </div>
+        <input class="submit-button" type="submit" />
+      </form>
+
+     
+    </div>
+
+    <div class="result">
+      <h2 id="nameResult"></h2>
+      <span id="publishDateResult"></span>
+      <p id="blogResult"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
